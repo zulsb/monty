@@ -14,10 +14,10 @@ void parse(stack_t **stack, char *op, unsigned int line_num)
 		{"push", _push},
 		{"pall", _pall},
 		{"pint", _pint},
-/**		{"pop", pop},
+		{"pop", pop},
 		{"swap", swap},
 		{"add", add},
-		{"nop", nop},*/
+		{"nop", nop},
 		{NULL, NULL}
 	};
 
