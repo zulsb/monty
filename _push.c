@@ -12,14 +12,14 @@ void _push(stack_t **stack, unsigned int line_number)
 	char *nmbr;
 
 	nmbr = strtok(NULL, DLS);
-	if (nmbr == '\0')
+	if (nmbr == NULL)
 	{
 		printf("L%u: usage: push integer\n", line_number);
 		exit(EXIT_FAILURE);
 	}
 
 	new = malloc(sizeof(stack_t));
-	if (new == '\0')
+	if (new == NULL)
 	{
 		printf("Error: malloc failed\n");
 		exit(EXIT_FAILURE);
