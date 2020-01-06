@@ -8,15 +8,15 @@
 void glo_f(void)
 {
 	stack_t *t;
-	stack_t *tmp = NULL;
+	stack_t *tm = NULL;
 
 	t = *glo;
 
 	while (t)
 	{
-		tmp = t->next;
+		tm = t->next;
 		free(t);
-		t = tmp;
+		t = tm;
 	}
 
 }
