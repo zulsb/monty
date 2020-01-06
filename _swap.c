@@ -19,13 +19,13 @@ void _swap(stack_t **stack, unsigned int line_number)
 
 	tm = (*stack)->next;
 
-	(*stack)->prev = temp;
-	(*stack)->next = temp->next;
+	(*stack)->prev = tm;
+	(*stack)->next = tm->next;
 
 	tm->prev = NULL;
 
 	if (tm->next)
-		temp->next->prev = *stack;
+		tm->next->prev = *stack;
 
 	tm->next = *stack;
 
