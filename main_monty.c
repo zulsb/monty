@@ -6,10 +6,10 @@ stack_t **glo;
   *main - Function principal.
   *@argc: Numbers of arguments.
   *@argv: Opcode file.
-  *Return: nothing.
+  *Return: exit_sucess..
   */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	stack_t *prin;
 
@@ -18,6 +18,7 @@ int main(int argc, char **argv)
 		printf("USAGE: monty file\n");
 		exit(EXIT_FAILURE);
 	}
+
 	prin = NULL;
 	glo = &prin;
 
