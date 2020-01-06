@@ -5,14 +5,16 @@
 /**-LIBRARIES--------------------------------------------------------------*/
 /**========================================================================*/
 
-#include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
+#include <stdio.h>
 #include <sys/types.h>
 #include <sys/stat.h>
-#include <ctype.h>
-#include <string.h>
 #include <fcntl.h>
+#include <ctype.h>
+
+#include <stdbool.h>
+#include <string.h>
+
 #define DLS "\n \r\t"
 
 /**========================================================================*/
