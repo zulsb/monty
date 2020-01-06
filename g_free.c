@@ -10,7 +10,7 @@ void glo_f(void)
 	stack_t *t;
 	stack_t *tmp;
 
-	tmp = NULL;
+	*tmp = NULL;
 	t = *glo;
 
 	while (t)
