@@ -2,12 +2,12 @@
 
 /**
   *read_f - Read file.
-  *@f: Filename.
+  *@file: Filename.
   *@stack: Top to stack.
   *Return: Error or success.
  */
 
-void read_f(char *f, stack_t **stack)
+void read_f(char *file, stack_t **stack)
 {
 	size_t lgth;
 	unsigned int nm = 0;
@@ -16,10 +16,10 @@ void read_f(char *f, stack_t **stack)
 	ssize_t rd_ln;
 	FILE *d;
 
-	d = fopen(f, "r");
+	d = fopen(file, "r");
 	if (!d)
 	{
-		printf("Error: Can't open file %s\n", f);
+		printf("Error: Can't open file %s\n", file);
 		exit(EXIT_FAILURE);
 	}
 
