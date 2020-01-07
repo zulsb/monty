@@ -10,11 +10,11 @@
 void read_f(char *file, stack_t **stack)
 {
 	size_t lgth;
+	ssize_t rd_ln;
 	unsigned int nm = 0;
 	char *ln = NULL;
-	char *cmmd;
-	ssize_t rd_ln;
 	FILE *d;
+	char *cmmd;
 
 	d = fopen(file, "r");
 	if (!d)
