@@ -59,7 +59,7 @@ typedef struct instruction_s
 extern stack_t **glo;
 void glo_f(void);
 void read_f(char *file, stack_t **stack);
-void parse(stack_t **stack, char *op, unsigned int line_num);
+void parse(stack_t **stack, char *op, unsigned int line_number);
 void _push(stack_t **stack, unsigned int line_number);
 void _pall(stack_t **stack, unsigned int line_number);
 void _pint(stack_t **stack, unsigned int line_number);
