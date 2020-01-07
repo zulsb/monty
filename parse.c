@@ -4,7 +4,7 @@
   *parse - Parses commands.
   *@stack: Double pointer
   *@op: Line commands.
-  *@line_num: Line number.
+  *@line_number: Line number.
  */
 
 void parse(stack_t **stack, char *op, unsigned int line_number)
