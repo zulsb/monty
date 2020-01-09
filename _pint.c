@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
-  *_pint - value at the top stack.
+  *pint - value at the top stack.
   *@stack: Double pointer.
   *@line_number: Line number.
   */
 
-void _pint(stack_t **stack, unsigned int line_number)
+void pint(stack_t **stack, unsigned int line_number)
 {
 	if (stack == NULL || *stack == NULL)
 	{

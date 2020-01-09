@@ -1,13 +1,13 @@
 #include "monty.h"
 
 /**
-  *_swap - Swaps the top two elements of the stack.
+  *swap - Swaps the top two elements of the stack.
   *@stack: Double pointer stack.
   *@line_number: Number in file.
   *
   */
 
-void _swap(stack_t **stack, unsigned int line_number)
+void swap(stack_t **stack, unsigned int line_number)
 {
 	stack_t *tm;
 

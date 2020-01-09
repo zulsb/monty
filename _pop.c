@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
-  *_pop - Removes the top element of the stack.
+  *pop - Removes the top element of the stack.
   *@stack: Double pointer stack.
   *@line_number: Number in file.
   */
 
-void _pop(stack_t **stack, unsigned int line_number)
+void pop(stack_t **stack, unsigned int line_number)
 {
 	stack_t *tm;
 

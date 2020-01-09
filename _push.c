@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
-  *_push - New node of the stack.
+  *push - New node of the stack.
   *@stack: Double pointer of the stack.
   *@line_number: Line number.
  */
 
-void _push(stack_t **stack, unsigned int line_number)
+void push(stack_t **stack, unsigned int line_number)
 {
 	stack_t *new;
 	char *nmbr;
