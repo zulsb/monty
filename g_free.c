@@ -20,3 +20,22 @@ void glo_f(void)
 	}
 
 }
+
+/**
+ * fstack - frees the stack
+ * @stack: pointer to the stack
+ * Return: Nothing
+ */
+void fstack(stack_t **stack)
+{
+	stack_t *h;
+	stack_t *tm;
+
+	h = *stack;
+	while (h)
+	{
+		tm = h;
+		h = h->next;
+		free(tm);
+	}
+}
