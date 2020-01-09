@@ -9,31 +9,31 @@
 
 void read_f(char *file, stack_t **stack)
 {
-	size_t len;
-	ssize_t read_line;
-	unsigned int num = 0;
-	char *line = NULL;
-	FILE *fd;
-	char *command;
+	size_t lgth;
+	ssize_t rl;
+	unsigned int nm = 0;
+	char *ln = NULL;
+	FILE *d;
+	char *cmmd;
 
-	fd = fopen(file, "r");
-	if (!fd)
+	d = fopen(file, "r");
+	if (!d)
 	{
 		printf("Error: Can't open file %s\n", file);
 		exit(EXIT_FAILURE);
 	}
 
-	while ((read_line = getline(&line, &len, fd)) != -1)
+	while ((rl = getline(&ln, &lgth, d)) != -1)
 	{
-		command = strtok(line, DLS);
-		num++;
+		cmmd = strtok(ln, DLS);
+		nm++;
 
-		if (command)
-			parse(stack, command, num);
+		if (cmmd)
+			parse(stack, cmmd, nm);
 	}
 
-	if (line)
-		free(line);
+	if (ln)
+		free(ln);
 
-	fclose(fd);
+	fclose(d);
 }
