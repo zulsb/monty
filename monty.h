@@ -60,12 +60,12 @@ extern stack_t **glo;
 void glo_f(void);
 void read_f(char *file, stack_t **stack);
 void parse(stack_t **stack, char *op, unsigned int line_number);
-void _push(stack_t **stack, unsigned int line_number);
-void _pall(stack_t **stack, unsigned int line_number);
-void _pint(stack_t **stack, unsigned int line_number);
-void _pop(stack_t **stack, unsigned int line_number);
-void _swap(stack_t **stack, unsigned int line_number);
-void _add(stack_t **stack, unsigned int line_number);
-void _nop(stack_t **stack, unsigned int line_number);
+void push(stack_t **stack, unsigned int line_number);
+void pall(stack_t **stack, unsigned int line_number);
+void pint(stack_t **stack, unsigned int line_number);
+void pop(stack_t **stack, unsigned int line_number);
+void swap(stack_t **stack, unsigned int line_number);
+void add(stack_t **stack, unsigned int line_number);
+void nop(stack_t **stack, unsigned int line_number);
 
 #endif
